@@ -34,7 +34,7 @@ export default function Header() {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-
+      padding: '1rem 2rem',
       position: 'fixed',
       top: isVisible ? '0' : '-100px',
       left: '0',
