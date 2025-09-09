@@ -165,6 +165,7 @@ export default function Header() {
         backgroundColor: '#FBF2E9',
         padding: '1rem 2rem',
         gap: '1rem',
+        borderTop: '1px solid #0c0c0c',
         zIndex: '5'
       }} className="mobile-nav">
         <Link to="/listings" style={{
