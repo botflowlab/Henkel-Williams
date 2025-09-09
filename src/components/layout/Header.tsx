@@ -40,7 +40,6 @@ export default function Header() {
       left: '0',
       right: '0',
       zIndex: '1000',
-      transition: 'top 0.3s ease-in-out',
       flexWrap: 'wrap',
       minHeight: '70px',
     }}>
