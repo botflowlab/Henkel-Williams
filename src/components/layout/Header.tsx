@@ -16,7 +16,7 @@ export default function Header() {
         color: '#0c0c0c',
         marginLeft: '20px'
       }}>
-        Luxury Real Estate
+        LUXURY REAL ESTATE
       </div>
 
       {/* Center: Navigation */}
