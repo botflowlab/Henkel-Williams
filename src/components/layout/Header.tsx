@@ -36,7 +36,6 @@ export default function Header() {
       justifyContent: 'space-between',
       padding: '1rem 2rem',
       position: 'fixed',
-      top: isVisible ? '0' : '-100px',
       left: '0',
       right: '0',
       zIndex: '1000',
