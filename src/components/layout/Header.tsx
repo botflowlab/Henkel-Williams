@@ -7,7 +7,6 @@ export default function Header() {
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: '20px 40px',
-      backgroundColor: '#FBF2E9',
       borderBottom: '1px solid #e5e5e5'
     }}>
       {/* Left: Brand */}
