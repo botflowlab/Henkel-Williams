@@ -12,7 +12,6 @@ export default function HomeHero() {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      color: '#0c0c0c',
       textAlign: 'center',
       padding: '2rem',
       opacity: '70%'
