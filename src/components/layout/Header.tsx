@@ -1,8 +1,29 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlHeader = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down & past 100px
+        setIsVisible(false);
+      } else {
+        // Scrolling up or at top
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlHeader);
+    return () => window.removeEventListener('scroll', controlHeader);
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,9 +35,16 @@ export default function Header() {
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: '1rem 2rem',
-      position: 'relative',
+      position: 'fixed',
+      top: isVisible ? '0' : '-100px',
+      left: '0',
+      right: '0',
+      backgroundColor: '#FBF2E9',
+      zIndex: '1000',
+      transition: 'top 0.3s ease-in-out',
       flexWrap: 'wrap',
-      minHeight: '70px'
+      minHeight: '70px',
+      boxShadow: '0 2px 10px rgba(12, 12, 12, 0.1)'
     }}>
       {/* Left: Brand */}
       <div style={{

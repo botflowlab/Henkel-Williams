@@ -14,7 +14,8 @@ export default function HomeHero() {
       alignItems: 'center',
       color: '#FBF2E9',
       textAlign: 'center',
-      padding: '2rem'
+      padding: '2rem',
+      marginTop: '70px'
     }}>
       <h1>Find Your Dream Home</h1>
       <p>Discover exceptional properties with Henkel-Williams Real Estate. We help you buy, sell, and invest in the perfect property.</p>
