@@ -3,7 +3,7 @@ import Button from '../../ui/Button';
 export default function HomeHero() {
   return (
     <section style={{
-      backgroundImage: 'url(/src/assets/images/template website.jpg)',
+      backgroundImage: 'url(/src/assets/images/templatewebsite.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
