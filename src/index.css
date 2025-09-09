@@ -1,10 +1,11 @@
 :root {
-  font-family: 'PP Neue Montreal', 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #0C0C0C;
-  background-color: #0C0C0C;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,42 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-/* PP Neue Montreal font fallback */
-@font-face {
-  font-family: 'PP Neue Montreal';
-  src: local('Montserrat'), local('system-ui');
-  font-weight: 300 700;
-  font-display: swap;
-}
-
 a {
   font-weight: 500;
-  color: #0c0c0c;
+  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #666;
+  color: #535bf2;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  display: flex;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0C0C0C;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -62,15 +42,27 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #FBF2E9;
-  color: #0c0c0c;
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #0c0c0c;
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
