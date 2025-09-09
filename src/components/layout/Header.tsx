@@ -39,6 +39,8 @@ export default function Header() {
       right: '0',
       zIndex: '1000',
       flexWrap: 'wrap',
+     paddingLeft: 'clamp(1rem, 3vw, 2rem)',
+     paddingRight: 'clamp(1rem, 3vw, 2rem)',
     }}>
       {/* Left: Brand */}
       <div style={{
