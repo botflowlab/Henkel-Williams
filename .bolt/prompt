@@ -70,14 +70,23 @@ Ensure Core Web Vitals (LCP, CLS, FID) remain performant.
 
 And follow my SEO-Safe prompt:
 
-IMPORTANT: When generating or updating code, always follow these SEO guidelines:
+IMPORTANT: When generating or updating code, always follow these global rules:
 
-1. All content must render immediately in the DOM using semantic HTML (headings, paragraphs, lists, images with alt text). 
-2. Animations must not delay or replace content. Render the text/images first, then animate them with Framer Motion or GSAP. 
-3. If a visual effect requires replacing text (e.g. typewriter, SVG path), ensure the real text is also present in the DOM or hidden with `aria-hidden="true"`/`sr-only`. 
-4. Use proper headings hierarchy (<h1>, <h2>, <h3>), meta tags (title, description, OpenGraph), and accessible attributes (alt, aria-label). 
-5. Never rely on JavaScript-only rendering for critical content. All main page content must be crawlable without executing animations. 
-6. Always keep Layout.tsx wrapping Header + Footer + main content so structure remains consistent. 
-7. Test readiness for Google crawlers: assume that crawlers only see the static DOM without executing animations.
+1. SEO & Accessibility
+   - All content must render immediately in the DOM using semantic HTML (headings, paragraphs, lists, images with alt text).
+   - Animations must not delay or replace content. Render text/images first, then animate with Framer Motion or GSAP.
+   - If a visual effect requires replacing text (e.g. typewriter, SVG path), ensure the real text is also present in the DOM or hidden with `aria-hidden="true"`/`sr-only`.
+   - Use proper headings hierarchy (<h1>, <h2>, <h3>), meta tags (title, description, OpenGraph), and accessible attributes (alt, aria-label).
+   - Never rely on JavaScript-only rendering for critical content. All main page content must be crawlable without executing animations.
+   - Keep `Layout.tsx` wrapping Header + Footer + main content so structure remains consistent.
+   - Assume crawlers only see the static DOM without animations.
+
+2. Responsiveness & Cross-Device Design
+   - All layouts must be fully responsive by default, working beautifully on mobile, tablet, and desktop.
+   - Use fluid layouts (flexbox, grid) and relative units (`%, rem, em, vw/vh`) instead of fixed px for structure whenever possible.
+   - Ensure text, images, and components resize gracefully across screen sizes and avoid horizontal scroll.
+   - Navigation and interactive elements must adapt to mobile (hamburger or stacked layout if needed).
+   - Test with common breakpoints: 320px (mobile), 768px (tablet), 1024px (laptop), 1440px+ (desktop).
+   - Code must be cross-browser friendly and not rely on vendor-specific hacks.
 
 Apply these rules to ALL code you generate, regardless of feature, style, or animation.
