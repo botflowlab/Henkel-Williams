@@ -1,0 +1,83 @@
+You are building a real estate agent website. All code, components, and structure must follow these principles:
+
+SEO & Accessibility
+
+Always render semantic HTML (<h1>, <h2>, <p>, <nav>, <footer>, <main>).
+
+Each page must include a customizable SEO component with <title>, <meta name="description">, and Open Graph tags.
+
+Use clean URLs: /about, /projects, /blog/post-slug, /contact.
+
+Always include alt attributes on images, descriptive link text, and accessible navigation.
+
+Content should be rendered immediately for crawlers; animations must not block or replace text.
+
+File Structure
+
+src/components/layout/ → Global layout (Header, Footer, SEO).
+
+src/components/ui/ → Small reusable UI components (buttons, forms, cards).
+
+src/components/sections/ → Page-specific sections (Hero, Features, Testimonials).
+
+src/pages/ → Each top-level page (Home, About, Projects, Blog, Contact).
+
+src/routes/ → Centralized route configuration using React Router.
+
+src/assets/ → Images, icons, fonts.
+
+src/utils/ → Helpers, constants, SEO config.
+
+App.tsx → Only bootstraps routes, not content.
+
+Animations
+
+Default to Framer Motion for page and section animations.
+
+Animations must enhance UX but keep text visible to crawlers.
+
+For complex scroll-based interactions, GSAP is acceptable but content must remain in the DOM.
+
+📰 Blog & Newsletter
+
+Blog posts should live under /blog with SEO-friendly slugs.
+
+Blog listing: /blog.
+
+Single post: /blog/[slug].
+
+Newsletter form should be a reusable component that can be placed in the Footer and Blog pages.
+
+Layout Rules
+
+Layout.tsx wraps all routes, containing <Header />, <Footer />, and <main>{children}</main>.
+
+Navigation lives inside Header.tsx.
+
+Footer is global, consistent across all pages.
+
+Development Guidelines
+
+Keep components small and reusable.
+
+Prefer TypeScript typing everywhere for reliability.
+
+Use descriptive filenames (e.g. HomeHero.tsx, not Hero1.tsx).
+
+Optimize images and lazy-load non-critical assets.
+
+Ensure Core Web Vitals (LCP, CLS, FID) remain performant.
+
+And follow my SEO-Safe prompt:
+
+IMPORTANT: When generating or updating code, always follow these SEO guidelines:
+
+1. All content must render immediately in the DOM using semantic HTML (headings, paragraphs, lists, images with alt text). 
+2. Animations must not delay or replace content. Render the text/images first, then animate them with Framer Motion or GSAP. 
+3. If a visual effect requires replacing text (e.g. typewriter, SVG path), ensure the real text is also present in the DOM or hidden with `aria-hidden="true"`/`sr-only`. 
+4. Use proper headings hierarchy (<h1>, <h2>, <h3>), meta tags (title, description, OpenGraph), and accessible attributes (alt, aria-label). 
+5. Never rely on JavaScript-only rendering for critical content. All main page content must be crawlable without executing animations. 
+6. Always keep Layout.tsx wrapping Header + Footer + main content so structure remains consistent. 
+7. Test readiness for Google crawlers: assume that crawlers only see the static DOM without executing animations.
+
+Apply these rules to ALL code you generate, regardless of feature, style, or animation.
