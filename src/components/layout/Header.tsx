@@ -14,7 +14,7 @@ export default function Header() {
         fontSize: '36px',
         fontWeight: '800',
         color: '#0c0c0c',
-        marginLeft: '20px'
+        marginLeft: '12px'
       }}>
         LUXURY REAL ESTATE
       </div>
