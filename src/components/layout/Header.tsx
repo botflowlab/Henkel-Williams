@@ -39,7 +39,6 @@ export default function Header() {
       top: isVisible ? '0' : '-100px',
       left: '0',
       right: '0',
-      backgroundColor: '#FBF2E9',
       zIndex: '1000',
       transition: 'top 0.3s ease-in-out',
       flexWrap: 'wrap',
