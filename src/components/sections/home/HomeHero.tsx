@@ -13,7 +13,6 @@ export default function HomeHero() {
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      padding: '2rem',
       opacity: '70%'
     }}>
       <h1>Find Your Dream Home</h1>
