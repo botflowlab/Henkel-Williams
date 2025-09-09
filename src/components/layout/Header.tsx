@@ -10,7 +10,7 @@ export default function Header() {
     }}>
       {/* Left: Brand */}
       <div style={{
-        fontFamily: 'PP Neue Montreal, Montserrat, sans-serif',
+        fontFamily: 'Montserrat',
         fontSize: '36px',
         fontWeight: '800',
         color: '#0c0c0c',
