@@ -76,7 +76,7 @@ export default function Header() {
         <span style={{
           width: '100%',
           height: '3px',
-          background: '#0c0c0c',
+          background: '#FBF2E9',
           borderRadius: '10px',
           transition: 'all 0.3s linear',
           transformOrigin: '1px'
@@ -84,7 +84,7 @@ export default function Header() {
         <span style={{
           width: '100%',
           height: '3px',
-          background: '#0c0c0c',
+          background: '#FBF2E9',
           borderRadius: '10px',
           transition: 'all 0.3s linear',
           transformOrigin: '1px'
@@ -92,7 +92,7 @@ export default function Header() {
         <span style={{
           width: '100%',
           height: '3px',
-          background: '#0c0c0c',
+          background: '#FBF2E9',
           borderRadius: '10px',
           transition: 'all 0.3s linear',
           transformOrigin: '1px'
