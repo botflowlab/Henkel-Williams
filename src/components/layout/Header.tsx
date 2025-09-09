@@ -43,7 +43,6 @@ export default function Header() {
       transition: 'top 0.3s ease-in-out',
       flexWrap: 'wrap',
       minHeight: '70px',
-      boxShadow: '0 2px 10px rgba(12, 12, 12, 0.1)'
     }}>
       {/* Left: Brand */}
       <div style={{
