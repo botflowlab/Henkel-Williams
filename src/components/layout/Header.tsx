@@ -7,7 +7,6 @@ export default function Header() {
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: '20px 40px',
-      borderBottom: '1px solid #e5e5e5'
     }}>
       {/* Left: Brand */}
       <div style={{
