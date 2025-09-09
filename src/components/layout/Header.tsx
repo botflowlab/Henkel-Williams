@@ -36,10 +36,11 @@ export default function Header() {
       justifyContent: 'space-between',
       padding: '1rem 2rem',
       position: 'fixed',
+      top: isVisible ? '0' : '-100px',
       left: '0',
       right: '0',
-
       zIndex: '1000',
+      transition: 'top 0.3s ease-in-out',
       flexWrap: 'wrap',
       minHeight: '70px',
     }}>
@@ -164,7 +165,6 @@ export default function Header() {
         backgroundColor: '#FBF2E9',
         padding: '1rem 2rem',
         gap: '1rem',
-        borderTop: '1px solid #0c0c0c',
         zIndex: '5'
       }} className="mobile-nav">
         <Link to="/listings" style={{
