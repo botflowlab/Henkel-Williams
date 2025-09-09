@@ -12,7 +12,7 @@ export default function Header() {
       <div style={{
         fontFamily: 'PP Neue Montreal',
         fontSize: '36px',
-        fontWeight: '600',
+        fontWeight: '800',
         color: '#0c0c0c',
         marginLeft: '20px'
       }}>
