@@ -224,7 +224,7 @@ export default function Header() {
         GET IN TOUCH
       </button>
 
-      <style jsx>{`
+      <style>{`
         @media (max-width: 768px) {
           .mobile-menu-btn {
             display: flex !important;
