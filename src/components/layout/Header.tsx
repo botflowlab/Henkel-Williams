@@ -40,7 +40,6 @@ export default function Header() {
       right: '0',
       zIndex: '1000',
       flexWrap: 'wrap',
-      minHeight: '70px',
     }}>
       {/* Left: Brand */}
       <div style={{
