@@ -39,6 +39,11 @@ body {
   background-color: #0C0C0C;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;

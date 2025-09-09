@@ -8,9 +8,9 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div style={{ margin: 0, padding: 0 }}>
       <Header />
-      <main>
+      <main style={{ margin: 0, padding: 0 }}>
         {children}
       </main>
       <Footer />
