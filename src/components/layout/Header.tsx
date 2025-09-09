@@ -49,7 +49,7 @@ export default function Header() {
         fontFamily: 'PP Neue Montreal, Montserrat, sans-serif',
         fontSize: 'clamp(1.5rem, 4vw, 2.25rem)',
         fontWeight: '800',
-        color: '#0c0c0c',
+        color: '#FBF2E9',
         flex: '0 0 auto',
         marginRight: '1rem'
       }}>
