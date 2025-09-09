@@ -21,13 +21,12 @@ export default function HomeHero() {
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      color: '#FBF2E9'
+      color: '#FBF2E9',
       top: '0'
+    }}>
       <h1>Find Your Dream Home</h1>
       <p>Discover exceptional properties with Henkel-Williams Real Estate. We help you buy, sell, and invest in the perfect property.</p>
-      <button>Get Started</button>
-    }
-    }
+      <Button>Get Started</Button>
     </section>
   );
 }
